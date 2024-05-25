@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "docusaurus build",
+    "build": "node api.js && docusaurus build",
     "clear": "docusaurus clear",
     "deploy": "docusaurus deploy",
     "format": "prettier --write .",
     "serve": "docusaurus serve",
-    "start": "docusaurus start",
+    "start": "node api.js && docusaurus start",
     "swizzle": "docusaurus swizzle",
     "write-translations": "docusaurus write-translations"
   },
